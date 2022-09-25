@@ -113,7 +113,7 @@ Use the hungryDog function and feeding requirements below to do the following:
 REMEMBER: This program should handle correctly adult AND puppy ages and weights
 HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 
-Feeding Requirements:
+Feeding Requirements::
 
 Adult Dogs 1 year and older 
    up to 5 lbs - 5% of their body weight
