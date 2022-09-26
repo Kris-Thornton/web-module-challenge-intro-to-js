@@ -182,7 +182,7 @@ function hungryDog(dogs, dWeight){
 
 console.log (hungryDog(1, 15))
 
-
+// I have been working on this one for some time today and I am having some issues with it. I will keep at it tomorrow but would love it if someone could help me out on this.
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
