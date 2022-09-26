@@ -147,41 +147,34 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
 
-function hungryDog(dogs, dWeight){
+function hungryDog(dWeight){
   let totalFood;
-  if(dogs >= 1){
+  let dogs;  
     if (dWeight <= 5){
       totalFood = dWeight * .05;
-    }
-    else if (dWeight >= 6 && dWeight <= 10){
+    }else if (dWeight > 6 && dWeight <= 10){
       totalFood = dWeight * .04;
-    }
-    else if (dWeight >= 11 && dWeight <= 15){
+    }else if (dWeight > 11 && dWeight <= 15){
       totalFood = dWeight * .03;
-    }
-    else if (dWeight > 15){
+    }else if (dWeight > 15){
       totalFood = dWeight * .02;
-    }
-  }
-  else if (dogs < 1){
-    if(dogs <= .33){
+    }else if(dogs < .33){
       totalFood = dWeight * .10;
-    }
-    else if (dogs <= .5833){
+    }else if (dogs > .33 && dogs < .5833){
       totalFood = dWeight * .05;
-    }
-    else if (dogs < 1){
+    }else if (dogs > .5833 && dogs < 1){
       totalFood = dWeight * .04;
     }
+    
+  return totalFood;
   }
 
-  return totalFood;
 
-  
-}
 
-console.log (hungryDog(1, 15))
 
+
+
+// It seems that the calculation of the dog weight regardless of what is being passed is beign calculated with the original .05 if statment rather than the needed if else statment based on weight range.
 // I have been working on this one for some time today and I am having some issues with it. I will keep at it tomorrow but would love it if someone could help me out on this.
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
