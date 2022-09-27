@@ -289,9 +289,11 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(startNum){
   for(let num = startNum; num > 0; num--)
-     return `${startNum}  bottles of soda on the wall, ${startNum} bottles of soda, take one down pass it around ${startNum - 1} bottles of soda on the wall`;
+     return `${startNum} bottles of soda on the wall, ${startNum} bottles of soda, take one down pass it around ${startNum - 1} bottles of soda on the wall`;
 }
 console.log (`task 6`, annoyingSong(10))
+
+
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
