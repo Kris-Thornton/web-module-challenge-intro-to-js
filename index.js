@@ -229,7 +229,7 @@ function game(user, computer){
     return "you lose!";
   }
 }
-console.log('task 4:', game("rock", "paper"))
+console.log('task 4:', game("rock", computer))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -241,10 +241,21 @@ Using the miles function below do the following:
 2. Convert the number of kiolmeters received to miles
 3. Return the number of miles
 */
+// _______________________________________
+// I also thought of this way.
+// _____________________________________
+// const kilToMile = 0.621371
+// function miles(cm){
+//   return kilToMile * cm
+// }
+// console.log(`task 5 a:`, miles(2))
+// _____________________________________
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(km){
+  return km * 0.621371
 }
+console.log(`task 5 a`, miles(4))
+
 
 
 
@@ -256,10 +267,10 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(cm){
+  return cm / 30.48;
 }
-
+console.log(`task 5 b`, feet(2))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -276,10 +287,11 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(startNum){
+  for(let num = startNum; num > 0; num--)
+     return `${startNum}  bottles of soda on the wall, ${startNum} bottles of soda, take one down pass it around ${startNum - 1} bottles of soda on the wall`;
 }
-
+console.log (`task 6`, annoyingSong(10))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -295,11 +307,23 @@ Using the grade function below do the following:
  60-69 should return 'you got a D'
  below should return 'you got an F'
 */
-
-function grade(/*Your Code here */){
-/*Your Code here */
+let score = 100
+function grade(score){
+  
+  if(score > 90){
+    return "you got an A"
+  }else if(score > 80 && score < 90){
+    return "you got a B"
+  }else if(score > 70 && score < 80){
+    return "you got a C"
+  }else if(score > 60 && score < 70){
+    return "you got a D"
+  }else if(score < 60){
+    return "you got an F"
+  }
+  
 }
-
+console.log(grade(score))
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
