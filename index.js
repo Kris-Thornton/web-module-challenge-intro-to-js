@@ -293,6 +293,7 @@ function annoyingSong(startNum){
 }
 console.log (`task 6`, annoyingSong(10))
 
+
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 //Grade Calculator
@@ -310,20 +311,19 @@ Using the grade function below do the following:
 
 function grade(score){
   
-  if(score >= 90){
-    return "you got an A";
-  }else if(score < 90 && score >= 80){
-    return "you got a B";
-  }else if(score < 80 && score >= 70  ){
-    return "you got a C";
-  }else if(score < 70 && score >= 60  ){
-    return "you got a D";
+  if(score >= 90 && score < 100){
+    return 'you got an A';
+  }else if(score <= 89 && score >= 80){
+    return 'you got a B';
+  }else if(score <= 79 && score >= 70  ){
+    return 'you got a C';
+  }else if(score < 69 && score >= 60  ){
+    return 'you got a D';
   }else if(score < 60){
-    return "you got an F";
+    return 'you got an F';
   }
-  
-}
-console.log(`task 7`, grade(85))
+  }
+  console.log(`task 7`, grade(73))
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
