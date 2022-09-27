@@ -21,7 +21,9 @@ Do the following:
 */
 const votingAge = 47
 if(votingAge >= 18){
-  console.log (true)
+  console.log ('task 1 a:', true)
+}else{
+  console.log(false);
 }
 
 
@@ -41,7 +43,7 @@ let secondThing = ("Apple")
 
 if( firstThing !== secondThing) {
   let firstThing = ("Pear")
-console.log (firstThing);  
+console.log ('task 1 b:', firstThing);  
 }
 
 
@@ -61,7 +63,7 @@ Do the following:
    HINT: look up the Number method
 */
 const theYear = ("1999")
-console.log (parseInt(theYear));
+console.log ('task 1 c:', parseInt(theYear));
 
 
 
@@ -76,10 +78,9 @@ Do the following:
 
 function multiply(a, b){
   return a * b;
- 
-}
-let theSum = multiply(2, 4)
-console.log (theSum)
+ }
+
+console.log ('task 1 d:', multiply(2, 4))
 
 
 
@@ -96,8 +97,8 @@ Do the following:
 function dogYears(hYears) {
   return 7 * hYears;
 };
-let totalAge = dogYears(12)
-console.log (totalAge) 
+
+console.log ('task 2:', dogYears(13)) 
 
 
 
@@ -150,6 +151,10 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
 
 
 function hungryDog(weight, age) {
+  let dog;
+  if(dog < .33) {
+    console.log()
+  } 
   if(age < 1) {
     if(age < .33) {
       return weight * .10;
@@ -169,11 +174,10 @@ function hungryDog(weight, age) {
       return weight * .02
     }  
 }
+console.log('task 3:',(hungryDog(15,1)))
 
 
 
-// It seems that the calculation of the dog weight regardless of what is being passed is beign calculated with the original .05 if statment rather than the needed if else statment based on weight range.
-// I have been working on this one for some time today and I am having some issues with it. I will keep at it tomorrow but would love it if someone could help me out on this.
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -196,11 +200,36 @@ Use the game function below to do the following:
 RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors | Or there's a tie
 */
 
-function game(user, computer){
-  /*add your code here*/
+
+// Make a global variable for the computer then in the fuction use if statement to compare users choice to those.
+
+let computer = Math.random();
+
+if(computer <= 0.34){
+  computer = "rock";
+}else if(computer <= 0.67){
+  computer = "paper";
+}else if(computer > 0.67){
+  computer = "scissors"
 }
-
-
+function game(user, computer){
+  if(user === computer){
+    return "it's a tie";
+  }else if(user === "rock" && computer === "scissors"){
+    return "you win!";
+  }else if(user === "paper" && computer === "rock"){
+    return "you win!";
+  }else if(user === "scissors" && computer === "paper"){
+    return "you win!";
+  }else if(user === "scissors" && computer === "rock"){
+    return "you lose!";
+  }else if(user === "rock" && computer === "paper"){
+    return "you lose!";
+  }else if(user === "paper" && computer === "scissors"){
+    return "you lose!";
+  }
+}
+console.log('task 4:', game("rock", "paper"))
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
